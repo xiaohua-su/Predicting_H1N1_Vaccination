@@ -1,0 +1,11 @@
+data/test_set_features.csv
+data/training_set_features.csv
+data/training_Set_labels.csv
+
+.ipynb_checkpoints
+.DS_Store
+__pycache__
+*.db
+*.pytest_cache
+.gitattributes
+ .ipynb_checkpoints/Juypter Notebook-checkpoint.ipynb
