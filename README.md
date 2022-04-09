@@ -1,4 +1,4 @@
-# Predicting_H1N1_or_Flu_Shot
+# Predicting seasonal Flu Shots
 
 
 ## Overview
@@ -9,7 +9,7 @@
 
 
 ## Data
-
+The data used was taken from DrivenData, which derived their version of the dataset from the CDC.
 
 ## Methods
 
