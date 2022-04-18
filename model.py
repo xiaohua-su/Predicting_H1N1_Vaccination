@@ -1,3 +1,6 @@
+from sklearn.model_selection import cross_val_score
+import numpy as np
+
 class ModelWithCV():
     '''Structure to save the model and more easily see its crossvalidation'''
 
@@ -15,7 +18,7 @@ class ModelWithCV():
         if cv_now:
             self.cross_validate()
 
-    def cross_validate(self, X=None, y=None, kfolds=10):
+    def cross_validate(self, X=None, y=None, kfolds=5):
         '''
         Perform cross-validation and return results.
 
