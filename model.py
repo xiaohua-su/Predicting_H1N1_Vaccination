@@ -1,5 +1,7 @@
 from sklearn.model_selection import cross_val_score
 import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 class ModelWithCV():
     '''Structure to save the model and more easily see its crossvalidation'''
