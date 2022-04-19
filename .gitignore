@@ -2,6 +2,7 @@ data/test_set_features.csv
 data/training_set_features.csv
 data/training_Set_labels.csv
 
+.idea
 .ipynb_checkpoints
 .DS_Store
 __pycache__
