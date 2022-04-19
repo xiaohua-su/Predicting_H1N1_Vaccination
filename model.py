@@ -2,6 +2,8 @@ from sklearn.model_selection import cross_val_score
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
+from sklearn.metrics import plot_confusion_matrix, f1_score, roc_auc_score, plot_roc_curve
+
 
 class ModelWithCV():
     '''Structure to save the model and more easily see its crossvalidation'''
@@ -41,12 +43,12 @@ class ModelWithCV():
         self.cv_median = np.median(self.cv_results)
         self.cv_std = np.std(self.cv_results)
 
-    def print_cv_summary(self):
-        cv_summary = (
-            f'''CV Results for `{self.name}` model:
-            {self.cv_mean:.5f} ± {self.cv_std:.5f} accuracy
-        ''')
-        print(cv_summary)
+#     def print_cv_summary(self):
+#         cv_summary = (
+#             f'''CV Results for `{self.name}` model:
+#             {self.cv_mean:.5f} ± {self.cv_std:.5f} accuracy
+#         ''')
+#         print(cv_summary)
 
     def plot_cv(self, ax):
         '''
@@ -65,3 +67,15 @@ class ModelWithCV():
         )
 
         return ax
+
+    def print_summary(self):
+        roc = plot_roc_curve(self.model, self.X , self.y);
+        cm = plot_confusion_matrix(self.model, self.X, self.y);
+        preds = self.model.predict(self.X)
+        f1_ = f1_score(self.y, preds)
+        cv_summary = (
+            f'''CV Results for `{self.name}` model:
+            {self.cv_mean:.5f} ± {self.cv_std:.5f} accuracy
+        ''')
+
+        print(f' \n  f1_score is {f1_}', cv_summary ,cm, roc)      
