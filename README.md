@@ -4,7 +4,7 @@
 ## Overview
 With the onset of the COVID-19 pandemic, it's important that we are able to predict if someone recieved a vaccine. Being able to predict who is likely going to get a vaccine shot is crucial as this will give insight into who are potentially features that may make a person more likely to be vaccinated. As such, targetted approach can be taken to help increase these odds.
 
-The IL Department of Public Health is trying to create a model that will predict who has gotten a vaccine. Using the information provided in the 2009 H1N1 survey, on DrivenData.org, I seek to produce a model that is able to predict whether someone has gotten the H1N1 vaccine based on the data in the survey. 
+The CDC is trying to create a model that will predict who has gotten a vaccine. Using the information provided in the 2009 H1N1 survey, on DrivenData.org, I seek to produce a model that is able to predict whether someone has gotten the H1N1 vaccine based on the data in the survey. I created a model that had an f1 score of 0.53.
 
 ## Problem
 The CDC has tasked us to create a model that can accurately predict whether someone has gotten the H1N1 vaccine.
