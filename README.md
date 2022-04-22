@@ -45,10 +45,11 @@ So, in conclusion, the model created was able to accurately predict whether some
 ├── data
 ├── image
 ├── H1N1 Vaccine Modeling.ipynb
+├── H1N1 vaccine.pdf
 ├── README.md
 ├── get_features.py
-├── model.py
-└── King_County_Real_Estate_Analysis.ipynb
+└──model.py
+
 
 ```
 ### Additional information and citations
