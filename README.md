@@ -29,3 +29,24 @@ Further tuning of model is needed to lower the misclassification of those that d
 
 So, in conclusion, the model created was able to accurately predict whether someone had gotten the H1N1 vaccine or not about 84%. While this is good, further tuning of the model can be made, with more time and resources. Testing the model against other vaccines such as COVID-19 will help make the model more generalizable as currently this model is optimized to look at the H1N1 vaccine specifically. It is difficult to be able to create a model that can generally predict who got a vaccine.The circumstances of when vaccines are implemented can vary and may be able to predict who got the vaccine better compared to a more general model. But a general model does have its own merits. My model today took a step towards creating such a generalizable predicting model that you the CDC are looking for to input into the a low vaccination hotspot model in order to target those inviduals. 
 
+## Repository Structure
+```
+├── Workspace  
+│       ├── EDA of H1N1.ipynb
+│       ├── EDA.ipynb
+│       ├── cleaned up-Copy1.ipynb    
+│       ├── cleaned up.ipynb  
+│       ├── fianl.ipynb
+│       └── testing class python files.ipynb
+│
+├── data
+├── image
+├── H1N1 Vaccine Modeling.ipynb
+├── README.md
+├── get_features.py
+├── model.py
+└── King_County_Real_Estate_Analysis.ipynb
+### Additional information and citations
+
+- Full analysis available in the project [Jupyter notebook](https://github.com/xiaohua-su/King_County_Real_Estate_Analysis/blob/main/King_County_Real_Estate_Analysis.ipynb)
+- Stakeholder-facing [presentation](https://github.com/xiaohua-su/King_County_Real_Estate_Analysis/blob/main/king_county_real_estate_presentation.pdf)
