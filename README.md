@@ -27,7 +27,7 @@ The F1 score is about 0.56 which is lower than the training of 0.62.
 ![img](./images/cm.png)
 ![img](./images/roc.png)
 
-The ROC-AUC is close to the training one. It's just lower than it by about 0.05. 
+The ROC-AUC is close to the training one. It's just lower than it by about 0.06. 
 
 ![img](./images/finalmodel_accuracy.png)
 
@@ -65,4 +65,4 @@ So, in conclusion, the model created was able to accurately predict whether some
 ### Additional information and citations
 
 - Full analysis available in the project [Jupyter notebook](https://github.com/xiaohua-su/Predicting_H1N1_Vaccination/blob/main/H1N1%20Vaccine%20Modeling.ipynb)
-- Presentation [presentation]
+- Presentation [presentation](https://github.com/xiaohua-su/Predicting_H1N1_Vaccination/blob/main/H1N1%20vaccine.pdf)
