@@ -39,7 +39,7 @@ So, in conclusion, the model created was able to accurately predict whether some
 │       ├── EDA.ipynb
 │       ├── cleaned up-Copy1.ipynb    
 │       ├── cleaned up.ipynb  
-│       ├── fianl.ipynb
+│       ├── final.ipynb
 │       └── testing class python files.ipynb
 │
 ├── data
