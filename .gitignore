@@ -1,6 +1,4 @@
-data/test_set_features.csv
-data/training_set_features.csv
-data/training_Set_labels.csv
+pickle
 
 .idea
 .ipynb_checkpoints
