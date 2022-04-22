@@ -21,6 +21,16 @@ This project use classifcation algorithms such as Logistic Regression, Decision 
 
 ## Results
 
+The accuracy score is 84%.
+The F1 score is about 0.56 which is lower than the training of 0.62.
+
+![img](./images/cm.png)
+![img](./images/roc.png)
+
+The ROC-AUC is close to the training one. It's just lower than it by about 0.05. 
+
+![img](./images/finalmodel_accuracy.png)
+
 
 ## Next Steps
 Further tuning of model is needed to lower the misclassification of those that did or did not get the H1N1 vaccine. Not only that but refinement can be made to the data if access to the original dataset as the regions in which each individual was located is masked. As such, we are unable to do initial analysis on where those who were unvaccinated are. We would also want to test the model against the covid-19 vaccine confidence survey, as they have some of the same questions that was asked in the H1N1 survey, to see how well it’s able to predict if someone had the covid-19 vaccine to examine if it’s generalizable for other vaccines. 
