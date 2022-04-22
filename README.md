@@ -46,7 +46,9 @@ So, in conclusion, the model created was able to accurately predict whether some
 ├── get_features.py
 ├── model.py
 └── King_County_Real_Estate_Analysis.ipynb
+
+```
 ### Additional information and citations
 
-- Full analysis available in the project [Jupyter notebook](https://github.com/xiaohua-su/King_County_Real_Estate_Analysis/blob/main/King_County_Real_Estate_Analysis.ipynb)
-- Stakeholder-facing [presentation](https://github.com/xiaohua-su/King_County_Real_Estate_Analysis/blob/main/king_county_real_estate_presentation.pdf)
+- Full analysis available in the project [Jupyter notebook](https://github.com/xiaohua-su/Predicting_H1N1_Vaccination/blob/main/H1N1%20Vaccine%20Modeling.ipynb)
+- Presentation [presentation]
