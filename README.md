@@ -3,7 +3,7 @@
 ![img](./images/cdc.jpg)
 
 **Author**
-Xiaohua Su
+Xiaohua Su [LinkedIn](www.linkedin.com/in/xiaohua-su) | [Email](mailto: xiaohuasu99@gmail.com)
 
 ## Overview
 There is a need to increase vaccination rates in the US. The last pandemic which was the H1N1, it is estimated that only about 27% of the population had gotten the vaccine during that vaccine, according to data from the CDC. For other vaccines such as the covid-19, the most recent data from the Mayo clinic shows that only about 66% were fully inoculated even after 2 years of the pandemic. As such, it is critical for the CDC to identify who has gotten vaccinated for a particular vaccine. Having high vaccination rates will allow for another layer of safeguard against a certain disease by lowering the spread of it with the hopes of achieving herd immunity. With this added layer of protection for vaccine, people will not get severely sick from the disease or possibly die from it. As such, the CDC wants to create a model that can predict whether someone has gotten a vaccine as it is time consuming to try to go out and ask each individual if they’ve been vaccinated for a particular disease. Today, I will attempt to address this problem. I will present to you model that specifically predicts whether or not someone got a H1N1 vaccine during the 2009-2010 H1N1 pandemic as there is survey data available for this vaccine. 
