@@ -1,16 +1,16 @@
 # Predicting seasonal Flu Shots
 
+![img](./images/cdc.jpg)
 
 ## Overview
-With the onset of the COVID-19 pandemic, it's important that we are able to predict if someone recieved a vaccine. Being able to predict who is likely going to get a vaccine shot is crucial as this will give insight into who are potentially features that may make a person more likely to be vaccinated. As such, targetted approach can be taken to help increase these odds.
-
-The CDC is trying to create a model that will predict who has gotten a vaccine. Using the information provided in the 2009 H1N1 survey, on DrivenData.org, I seek to produce a model that is able to predict whether someone has gotten the H1N1 vaccine based on the data in the survey. I created a model that had an f1 score of 0.53.
+There is a need to increase vaccination rates in the US. Having high vaccination rates will allow for another layer of safeguard against a certain disease by lowering the spread of it with the hopes of achieving herd immunity. With this added layer of protection for vaccine, people will not get severely sick from the disease or possibly die from it. As such, the CDC wants to create a model that can predict whether someone has gotten a vaccine. I will present to you model that specifically predicts whether or not someone got a H1N1 vaccine during the 2009-2010 H1N1 pandemic as there is survey data available for this vaccine. The model performed with an accuracy of 84% on unseen data with an F1 score of about 0.53. Using this model as the basis, a new model can then be created in order to locate which region many of these unvaccinated people are and strategies to get these individuals vaccinated such as free vaccine clinics, can then be further discussed after examination of the landscape.
 
 ## Problem
-The CDC has tasked us to create a model that can accurately predict whether someone has gotten the H1N1 vaccine.
+The CDC has tasked us to create a model that can accurately predict who has been vaccinated and who hasn't, in order to input into another model to locate these spots of where there is low vaccination rates.
 
 ## Data
-The data used was taken from DrivenData, which contains some basic information about an individual such as their `age_group`, opinions on H1N1 and the seasonal flu vaccines, and some behaviors. This survey was performed betwenn October 2009 to June 2010, when H1N1 was declared a pandemic.   
+
+The data that was used in to create the model was taken from DataDrive, which derive its version from the CDC’s. It contains basic information on the individual such as their education levels, race, gender, age and their opinions on the topic of H1N1 and Flu vaccine such effectiveness. Sensitive Information about the individual such as what region they’re located in, employment industry and occupation were already masked in this dataset.   
 
 ## Methods
 This project use classifcation algorithms such as Logistic Regression, Decision trees and ensembles algorithms such as voting classification. Columns such as `race` was removed from the data set to ensure that when we pull out features and or interpret our model, it will not have this racial bias included in it. 
@@ -19,11 +19,13 @@ This project use classifcation algorithms such as Logistic Regression, Decision 
 ## Results
 
 
+## Next Steps
+Further tuning of model is needed to lower the misclassification of those that did or did not get the H1N1 vaccine. Not only that but refinement can be made to the data if access to the original dataset as the regions in which each individual was located is masked. As such, we are unable to do initial analysis on where those who were unvaccinated are. We would also want to test the model against the covid-19 vaccine confidence survey, as they have some of the same questions that was asked in the H1N1 survey, to see how well it’s able to predict if someone had the covid-19 vaccine to examine if it’s generalizable for other vaccines. 
+
+
+
 
 ## Conclusion
 
+So, in conclusion, the model created was able to accurately predict whether someone had gotten the H1N1 vaccine or not about 84%. While this is good, further tuning of the model can be made, with more time and resources. Testing the model against other vaccines such as COVID-19 will help make the model more generalizable as currently this model is optimized to look at the H1N1 vaccine specifically. It is difficult to be able to create a model that can generally predict who got a vaccine.The circumstances of when vaccines are implemented can vary and may be able to predict who got the vaccine better compared to a more general model. But a general model does have its own merits. My model today took a step towards creating such a generalizable predicting model that you the CDC are looking for to input into the a low vaccination hotspot model in order to target those inviduals. 
 
-
-## Next Steps
-- Be able to examine the `hhs_geo_region` more closely -understandable that this dataset given to me had the regions in randomized strings to ensure even more privacy
-- 
