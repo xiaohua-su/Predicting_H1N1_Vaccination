@@ -2,7 +2,7 @@ from sklearn.model_selection import cross_val_score
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-from sklearn.metrics import plot_confusion_matrix, f1_score, roc_auc_score, plot_roc_curve
+from sklearn.metrics import plot_confusion_matrix, f1_score, plot_roc_curve
 
 
 class ModelWithCV():
@@ -38,17 +38,10 @@ class ModelWithCV():
         cv_X = X if X else self.X
         cv_y = y if y else self.y
 
-        self.cv_results = cross_val_score(self.model, cv_X, cv_y, cv=kfolds)
+        self.cv_results = cross_val_score(self.model, cv_X, cv_y, cv=5, scoring='f1')
         self.cv_mean = np.mean(self.cv_results)
         self.cv_median = np.median(self.cv_results)
         self.cv_std = np.std(self.cv_results)
-
-#     def print_cv_summary(self):
-#         cv_summary = (
-#             f'''CV Results for `{self.name}` model:
-#             {self.cv_mean:.5f} ± {self.cv_std:.5f} accuracy
-#         ''')
-#         print(cv_summary)
 
     def plot_cv(self, ax):
         '''
@@ -70,12 +63,12 @@ class ModelWithCV():
 
     def print_summary(self):
         roc = plot_roc_curve(self.model, self.X , self.y);
-        cm = plot_confusion_matrix(self.model, self.X, self.y);
+        cm = plot_confusion_matrix(self.model, self.X, self.y, cmap=plt.cm.Blues);
         preds = self.model.predict(self.X)
         f1_ = f1_score(self.y, preds)
         cv_summary = (
             f'''CV Results for `{self.name}` model:
-            {self.cv_mean:.5f} ± {self.cv_std:.5f} accuracy
+            {self.cv_mean:.5f} ± {self.cv_std:.5f} f1
         ''')
 
-        print(f' \n  f1_score is {f1_}', cv_summary ,cm, roc)      
+        print(f' The F1 on the training is {f1_} \n {cv_summary} \n \n {cm}, \n \n {roc}')
